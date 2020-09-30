@@ -1,12 +1,10 @@
 ## Welcome to James Martinez's ePortfolio!
 
-The ePortfolio starts with a professional self-assessment, then followed by a code review of several artifacts that will undergo revision and 
+This ePortfolio contains a professional self-assessment, followed by a code review of several artifacts that will undergo revision and enhancements. 
 
-enhancements to their functionality. 
+Each artifact presented in this ePortfolio will also be accompanied by narratives that reflect on the revision and enhancement process.
 
-Each artifact that is presented in this ePortfolio will also be accompanied with their respective narratives that reflect on the enhancement
-
-process.
+Thank you kindly for spending your time reviewing my ePortfolio!
 
 
 
