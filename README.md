@@ -1,8 +1,14 @@
-## Welcome to GitHub Pages
+## Welcome to James Martinez's ePortfolio!
 
-You can use the [editor on GitHub](https://github.com/jnez81/jnez81.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The ePortfolio starts with a professional self-assessment, then followed by a code review of several artifacts that will undergo revision and 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+enhancements to their functionality. 
+
+Each artifact that is presented in this ePortfolio will also be accompanied with their respective narratives that reflect on the enhancement
+
+process.
+
+
 
 ### Markdown
 
