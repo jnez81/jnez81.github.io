@@ -9,6 +9,12 @@ Thank you kindly for spending your time reviewing my ePortfolio!
 
 [Code Review Video](https://youtu.be/N0ShK56sxoU)
 
+
+### Artifacts
+
+
+### Narratives
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
