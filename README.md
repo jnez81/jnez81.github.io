@@ -7,9 +7,7 @@ Each artifact presented in this ePortfolio will also be accompanied by narrative
 Thank you kindly for spending your time reviewing my ePortfolio!
 
 
-
-### Code Review
-[Software Design/Engineering](https://youtu.be/N0ShK56sxoU)
+[Code Review Video](https://youtu.be/N0ShK56sxoU)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
