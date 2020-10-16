@@ -13,8 +13,18 @@ Thank you kindly for spending your time reviewing my ePortfolio!
 ### Artifacts
 [Software Design/Engineering](https://github.com/jnez81/design_eng_artifact)
 
+[Algorithms and Data Structure](https://github.com/jnez81/algo_data_struct)
+
 ### Narratives
 [Software Design/Engineering](https://github.com/jnez81/design_eng_artifact/blob/main/narrative)
+
+[Algorithms and Data Structure](https://github.com/jnez81/algo_data_struct/blob/main/narrative)
+
+
+
+
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
