@@ -14,6 +14,7 @@ Thank you kindly for spending your time reviewing my ePortfolio!
 [Software Design/Engineering](https://github.com/jnez81/design_eng_artifact)
 
 ### Narratives
+[Software Design/Engineering](https://github.com/jnez81/design_eng_artifact/blob/main/narrative)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
