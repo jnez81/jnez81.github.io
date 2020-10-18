@@ -10,7 +10,7 @@ Thank you kindly for spending your time reviewing my ePortfolio!
 [Code Review Video](https://youtu.be/N0ShK56sxoU)
 
 
-## Artifacts
+## Artifacts and Narratives
 Software Design/Engineering
 ```python
 # James Martinez 
@@ -151,6 +151,24 @@ while True:
 	 # wait one minute before refreshing the LCD and twitter feed
     time.sleep(60)
 ```
+## Narrative 
+The name of this artifact is the WetSpec, a weather reporting station that runs on the Raspberry Pi platform which is connected to a GrovePi electronics board which 
+has the capability to easily connect a wide range of sensor types.  The software for this project was designed using Python.
+
+This artifact was selected to showcase my ability to write software to interface with embedded systems to control hardware and software components, and display data from an 
+embedded device by modifying interfacing software in an emerging systems architecture. The artifact was improved by including Twitter feed functionality that will tweet 
+the weather data every minute to a specified Twitter account.  
+
+Several revisions were made to the initial enhancement plan as I had originally planned to revise the code to add color-coded functionality to the temperature and humidity 
+readings. However, I later decided to include the ability for the program to tweet the weather data on a specified Twitter account.  
+
+During the enhancement process for this element of the final project I was able to see the theory of having new ideas and perspectives after not seeing a specific code for 
+a period of time, play out in a real-world scenario.  The original source code for this project was done about 6 months ago and when I submitted the code for a class final project,
+I was very satisfied with the result.  The program functioned exactly the way I intended and was the final product after weeks of revisions and improvements.  However, after 
+many months without seeing the code I right away noticed that some of the comments were confusing to understand, and since I hadn’t seen the code for months it took me a 
+while to remember what the code was designed to accomplish.
+
+
 
 [Algorithms and Data Structure](https://github.com/jnez81/algo_data_struct)
 
