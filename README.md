@@ -11,7 +11,7 @@ Thank you kindly for spending your time reviewing my ePortfolio!
 
 
 ## Artifacts and Narratives
-Software Design/Engineering
+###Software Design/Engineering
 ```python
 # James Martinez 
 # Software Design/Engineering program enhancemnents
@@ -151,7 +151,7 @@ while True:
 	 # wait one minute before refreshing the LCD and twitter feed
     time.sleep(60)
 ```
-## Narrative 
+ 
 The name of this artifact is the WetSpec, a weather reporting station that runs on the Raspberry Pi platform which is connected to a GrovePi electronics board which 
 has the capability to easily connect a wide range of sensor types.  The software for this project was designed using Python.
 
@@ -170,14 +170,159 @@ while to remember what the code was designed to accomplish.
 
 
 
-[Algorithms and Data Structure](https://github.com/jnez81/algo_data_struct)
+###Algorithms and Data Structure
+```python
+# Aggregation pipeline statement that determines a user-specified 
+# company's market cap value.  Company specific stock information is 
+# retrieved from MongoDB database "market" in the collection "stocks" 
 
-[Databases](https://github.com/jnez81/databases)
+import json 
+from bson import json_util
+from pymongo import MongoClient
 
-## Narratives
-[Software Design/Engineering](https://github.com/jnez81/design_eng_artifact/blob/main/narrative)
+client = MongoClient('localhost', 27017)
+db = client.market
+coll = db['stocks']
 
-[Algorithms and Data Structure](https://github.com/jnez81/algo_data_struct/blob/main/narrative)
+def aggregate():
+    try: 
+        
+        # User-input company name to retrieve market cap value
+        company = input('Enter company name using quotation marks: ')
 
-[Databases](https://github.com/jnez81/databases/blob/main/narrative)
+        # Aggregation pipeline that identifies company name and multiplies company's
+        # share price and shares outstanding value to determine company's market cap value
+        pipe1 = [
+                {'$match': {"Company" : company}}, 
+                {'$project': {"Company": 1, "Market Cap Value": { '$multiply': ["$Price", "$Shares Outstanding"] }}} 
+              ]
+        
+        result = db.stocks.aggregate(pipe1)
+        
+        for x in result:
+            print(x)
+          
+        
+    except Exception as exception:
+        print("Exception: {}".format(type(exception).__name__))
+        print("Exception message: Use quotation marks and/or check spelling.")
+        
+aggregate()
+```
+
+This artifact is designed to function as a stock market securities information reporting service and utilizes a RESTful API web-based protocol to retrieve specified company data 
+in conjunction with a MongoDB database of company stocks information.  
+
+This artifact was selected to showcase my abilities and skills in developing algorithms that search and retrieve data according to customer’s requests, using advanced programming 
+techniques in multiple languages that interface within a full stack environment, and using application programming interfaces (APIs) to create a reusable software service.  The 
+artifact was previously designed to retrieve a list of companies that that have the highest number of totals shares outstanding and then group the companies by their respective 
+industry.  It was later decided that this artifact could be significantly improved if it could provide potential investors with one of the most important values in respect to 
+stocks, which is market capitalization.  The function will be significantly more efficient as it will only need to search for one specified company name and then determine the 
+company’s respective market capitalization, or market cap.
+
+The design of the new function of determining a company’s market cap value significantly improves its efficiency and provides the user with a more valuable result. Potential 
+investors can simply input the company name into the program, and it will return the company’s market cap value which is a great indicator of potential risk that is involved 
+while investing in company stocks.  
+
+Modifying this artifact was another example of returning to an old project after a period of time and having fresh ideas that can improve its functionality and efficiency.  These 
+moments in software development teach us that innovation is a constant process and extremely relevant in computer science.  During the process of modifying this artifact I was
+also able to relate the similarities between continuously learning new skills as a software engineer, and continuously improving and innovating older technology that we have 
+developed. 
+
+
+
+###Databases
+```python
+# Method prompts user-input to identify business ID in MongoDB database "city" 
+# in the collection "inspections".  User is then prompted to select which value of 
+# the document to modify and update in the database. 
+
+import json 
+from bson import json_util
+from pymongo import MongoClient
+
+#Connect to MongoClient, database and collection
+client = MongoClient('localhost', 27017)
+db = client.city
+coll = db['inspections']
+
+#Method to update a document in MongoDB
+def update_one():
+    try: 
+        businessID = input('Enter business ID without quotation marks: ')
+        
+        
+        db.inspections.find_one(
+                {
+                    "id" : businessID ,
+                   
+                }
+            )
+        print("\nBusiness found successfully!")
+        print(coll.find_one({"id": businessID}))
+        
+        user_input = input('\nChoose the numbered attribute to update: 1. ID, 2. Business Name, 3. Inspection Date,4. Inspection Result ')
+        
+        # elif statement to update attribute per user request
+        if user_input == 1:
+          newID = input('Please enter new business ID: ')
+          
+          db.inspections.insert({"id" : newID})
+          
+          print("Business ID has been updated!")
+          
+        elif user_input == 2: 
+          newName = input('Please enter new business name in quotation marks: ')
+          
+          db.inspections.insert({"business_name" : newName})
+          
+          print("Business name has been updated!")
+          
+        elif user_input == 3: 
+          newDate = input('Please enter new inspection date in quotation marks: ')
+          
+          db.inspections.insert({"date" : newDate})
+          
+          print("Inspection date has been updated!")
+          
+        elif user_input == 4: 
+          newResult = input('Please enter new inspection result in quotation marks: ')
+          
+          db.inspections.insert({"result" : newResult})
+          
+          print("Inspection result has been updated!")
+          
+        else: 
+          print("Please select options 1-4, please try again.")
+        
+        
+    except Exception as exception:
+        print("Exception: {}".format(type(exception).__name__))
+        print("Exception message: Use quotation marks and/or check spelling.")
+        
+update_one()
+```
+
+This artifact is designed to function as a stock market securities information reporting service and utilizes a RESTful API web-based protocol to retrieve specified company data 
+in conjunction with a MongoDB database of company stocks information.  
+
+This artifact was selected to showcase my abilities and skills with database systems, specifically MongoDB which is a NoSQL document storage system. This artifact incorporates 
+CRUD (create, read, update, and delete) operations that are designed to manipulate documents in the NoSQL database according to user-input.  It also demonstrates the ability to 
+develop a web service application to implement a RESTful application programming interface for the MongoDB database. The improvements made to this artifact consist of incorporating
+MongoDB statements that will update user-defined values for existing documents using the company’s business ID. The original code simply prompted the user to identify which 
+company ticker abbreviation to use in order to update the “volume” value in the document.  Each company document has a large number of values associated with the company’s 
+respective stock market information and prompting the user to identify several specific values to update adds much more functionality and purpose to the program.  The user inputs 
+the business ID into the database and will then prompt the user to select which values to update in the document.  
+
+Several revisions were made to this artifact’s enhancement plan over the previous weeks, all consisting of determining which specific document values to modify in the MongoDB 
+system.  The implementation of prompting the user to identify which business value to update required advanced programming concepts that include the else-if statement in the 
+‘update_one’ method which is designed to identify the requested value and update it in the MongoDB database.
+
+The enhancement process of this artifact did not present many challenges, however there was some additional research required to refresh knowledge of proper language syntax while 
+designing the else-if statement in the ‘updateDocument.py’ function.  A key learning through this process is understanding the importance of documentation and always taking 
+advantage of the ability to research online documentation that greatly benefits software development projects. The practice of documenting software development is also used as a 
+historical reference to the decisions made during its design, and to have a solid reference point other than a few developers who may lose this valuable information as time passes.   
+
+
+
 
