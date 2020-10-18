@@ -6,11 +6,14 @@ Each artifact presented in this ePortfolio will also be accompanied by narrative
 
 Thank you kindly for spending your time reviewing my ePortfolio!
 
+
 ## Code Review
 [Code Review Video](https://youtu.be/N0ShK56sxoU)
 
 
+
 ## Artifacts and Narratives
+
 ### Software Design/Engineering
 ```python
 # James Martinez 
@@ -170,6 +173,7 @@ while to remember what the code was designed to accomplish.
 
 
 
+
 ### Algorithms and Data Structure
 ```python
 # Aggregation pipeline statement that determines a user-specified 
@@ -228,6 +232,7 @@ Modifying this artifact was another example of returning to an old project after
 moments in software development teach us that innovation is a constant process and extremely relevant in computer science.  During the process of modifying this artifact I was
 also able to relate the similarities between continuously learning new skills as a software engineer, and continuously improving and innovating older technology that we have 
 developed. 
+
 
 
 
