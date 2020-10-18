@@ -11,7 +11,7 @@ Thank you kindly for spending your time reviewing my ePortfolio!
 
 
 ## Artifacts and Narratives
-###Software Design/Engineering
+### Software Design/Engineering
 ```python
 # James Martinez 
 # Software Design/Engineering program enhancemnents
@@ -170,7 +170,7 @@ while to remember what the code was designed to accomplish.
 
 
 
-###Algorithms and Data Structure
+### Algorithms and Data Structure
 ```python
 # Aggregation pipeline statement that determines a user-specified 
 # company's market cap value.  Company specific stock information is 
@@ -231,7 +231,7 @@ developed.
 
 
 
-###Databases
+### Databases
 ```python
 # Method prompts user-input to identify business ID in MongoDB database "city" 
 # in the collection "inspections".  User is then prompted to select which value of 
